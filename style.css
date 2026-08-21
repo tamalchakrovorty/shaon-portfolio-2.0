@@ -711,9 +711,9 @@ footer a:hover{
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        padding-top: 6rem;
+        padding-top: 5rem;
         min-height: auto;
-        gap: 2rem;
+        gap: 1.5rem;
     }
     .hero-top .content{
         gap: 1.5rem;
@@ -722,10 +722,10 @@ footer a:hover{
     }
     .person-img{
         align-self: center;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
     .person-img img{
-        max-width: clamp(250px, 60vw, 350px);
+        max-width: clamp(220px, 55vw, 300px);
     }
     .contact-me{
         gap: 0.75rem;
