@@ -266,6 +266,7 @@ header.header-scrolled .menu-toggle span{
     align-items: center;
     gap: 5rem;
     padding: 0 var(--section-padding);
+    scroll-margin-top: 5rem;
 }
 .aboutme > .container{
     width: 100%;
@@ -395,6 +396,7 @@ header.header-scrolled .menu-toggle span{
     align-items: center;
     gap: 3rem;
     padding: 0 var(--section-padding);
+    scroll-margin-top: 5rem;
 }
 .skills-grid{
     display: grid;
@@ -436,6 +438,7 @@ header.header-scrolled .menu-toggle span{
     margin-top: 8rem;
     background: var(--bg-light);
     padding: var(--section-padding) var(--section-padding);
+    scroll-margin-top: 5rem;
 }
 .projects-header{
     display: flex;
@@ -572,6 +575,7 @@ header.header-scrolled .menu-toggle span{
     flex-direction: column;
     gap: 4rem;
     padding: 0 var(--section-padding);
+    scroll-margin-top: 5rem;
 }
 form {
     display: flex;
