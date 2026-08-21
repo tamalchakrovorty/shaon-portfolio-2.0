@@ -704,7 +704,7 @@ footer a:hover{
         right: 0;
         height: 100%;
         background: var(--bg-dark);
-        clip-path: polygon(0 55%, 100% 20%, 100% 100%, 0 100%);
+        clip-path: polygon(0 58%, 100% 30%, 100% 100%, 0 100%);
         z-index: 0;
     }
     .hero-top{
