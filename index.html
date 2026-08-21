@@ -9,8 +9,13 @@
 </head>
 <body>
     <header>
-        <nav class="container navbar">
+        <nav class="navbar">
             <img src="./images//logo.png" alt="logo" class="logo">
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#About">About me</a></li>
                 <li><a href="#Skills">Skills</a></li>
@@ -26,9 +31,10 @@
                     <div class="info">
                         <h1>Hi, I am</h1>
                         <h2>Shaon Basak</h2>
-                        <h6>Software Developer | CSE Student</h6>
+                        <h6>Computer Science &<br>Engineering Student</h6>
                     </div>
                     <div class="contact-me">
+                        <a href="mailto:shaon@example.com"><i class="fa-regular fa-envelope"></i></a>
                         <a href="https://api.whatsapp.com/send/?phone=8801796751108&text&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                         <a href="https://linkedin.com/in/shaon-basak-576b7635a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/Shaon-12" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -41,7 +47,7 @@
             </div>
             <div class="hero-bottom">
                 <h4>CAREER OBJECTIVE</h4>
-                <p>4th Year Computer Science and Engineering student seeking a Software Developer Intern to apply knowledge of software engineering, web development, and problem solving in a professional environment while contributing to software development projects and gaining practical industry experience.</p>
+                <p>4th Year Computer Science and Engineering student seeking a Software Developer Intern role to apply my knowledge of software engineering, web development, and problem solving in a professional environment while contributing to real software projects and gaining practical industry experience.</p>
             </div>
         </section>
         <section class="aboutme container" id="About">
@@ -308,5 +314,21 @@
             <p>&copy; 2024 Shaon Basak. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
