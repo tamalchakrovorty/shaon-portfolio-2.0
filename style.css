@@ -45,8 +45,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: var(--container-width);
-    margin-inline: auto;
+    width: 100%;
+    padding: 0 3rem;
     height: 100%;
 }
 .navbar .logo{
@@ -82,20 +82,19 @@ header{
 }
 .nav-links li a{
     text-decoration: none;
-    color: #777;
+    color: #fff;
     font-size: 1rem;
     font-weight: 400;
     transition: opacity 0.2s;
 }
 .nav-links li a:hover{
     opacity: 0.7;
-    color: #111;
 }
 .nav-links .btn{
     text-decoration: none;
     background-color: transparent;
-    color: #777;
-    border: 1px solid #777;
+    color: #fff;
+    border: 1px solid #fff;
     padding: 10px 25px;
     border-radius: 20px;
     font-size: 1rem;
@@ -104,9 +103,8 @@ header{
     transition: background-color 0.2s, color 0.2s;
 }
 .nav-links .btn:hover{
-    background-color: #111;
-    border-color: #111;
-    color: #fff;
+    background-color: #fff;
+    color: #111;
 }
 
 /* ===== HERO - DESKTOP ===== */
