@@ -107,7 +107,7 @@ header{
     color: var(--bg-light);
 }
 
-/* ===== HERO ===== */
+/* ===== HERO - DESKTOP ===== */
 .hero{
     position: relative;
     overflow: hidden;
@@ -641,12 +641,14 @@ footer a:hover{
     color: #d7d7d7;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE - TABLET ===== */
 @media (max-width: 1024px){
     .person-img img{
         max-width: clamp(200px, 30vw, 350px);
     }
 }
+
+/* ===== RESPONSIVE - MOBILE ===== */
 @media (max-width: 768px){
     .menu-toggle{
         display: flex;
@@ -687,6 +689,8 @@ footer a:hover{
         transform: rotate(-45deg) translate(5px, -5px);
         background: #fff;
     }
+
+    /* HERO MOBILE - COMPLETELY DIFFERENT UI */
     .hero{
         min-height: auto;
         background: var(--bg-light);
@@ -706,18 +710,30 @@ footer a:hover{
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        padding-top: 5rem;
+        padding-top: 6rem;
         min-height: auto;
         gap: 1.5rem;
     }
     .hero-top .content{
         gap: 1.5rem;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         padding-bottom: 0;
+    }
+    .info h1{
+        font-size: 1.25rem;
+        margin-bottom: 0.3rem;
+    }
+    .info h2{
+        font-size: 2.25rem;
+        margin-bottom: 0.3rem;
+    }
+    .info h6{
+        font-size: 1rem;
+        color: #777;
     }
     .person-img{
         align-self: center;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
     }
     .person-img img{
         max-width: clamp(280px, 75vw, 380px);
@@ -726,12 +742,39 @@ footer a:hover{
         gap: 0.75rem;
     }
     .contact-me a{
-        width: 40px;
-        height: 40px;
+        width: 42px;
+        height: 42px;
+        border: 1px solid #999;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-me i{
+        background: none;
+        padding: 0;
+        font-size: 1.1rem;
+    }
+    .download-btn{
+        display: none;
     }
     .hero-bottom{
         padding: 2rem 1.5rem;
+        position: relative;
+        z-index: 2;
     }
+    .hero-bottom h4{
+        font-size: 1rem;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+    .hero-bottom p{
+        font-size: 0.85rem;
+        line-height: 1.6;
+        color: #aaa;
+    }
+
+    /* OTHER SECTIONS */
     .aboutme{
         margin-top: 4rem;
         padding: 0 1.5rem;
@@ -765,6 +808,8 @@ footer a:hover{
         padding: 2rem 1.5rem;
     }
 }
+
+/* ===== RESPONSIVE - SMALL MOBILE ===== */
 @media (max-width: 480px){
     .grid-about{
         grid-template-columns: minmax(0, 1fr);
@@ -776,7 +821,7 @@ footer a:hover{
         font-size: 1.1rem;
     }
     .info h2{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .info h6{
         font-size: 0.9rem;
@@ -791,15 +836,14 @@ footer a:hover{
     .contact-me i{
         font-size: 1rem;
     }
-    .download-btn{
-        padding: 0.6rem 1.4rem;
-        font-size: 0.75rem;
+    .person-img img{
+        max-width: clamp(260px, 70vw, 340px);
     }
     .hero-bottom{
         padding: 1.5rem 1rem;
     }
     .hero-bottom h4{
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
     .hero-bottom p{
         font-size: 0.8rem;
