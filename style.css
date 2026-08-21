@@ -73,9 +73,10 @@ header{
 }
 .nav-links{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 3rem;
+    flex: 1;
 }
 .nav-links li{
     list-style: none;
@@ -112,7 +113,7 @@ header{
     position: relative;
     overflow: hidden;
     background: var(--bg-light);
-    min-height: 85vh;
+    min-height: 75vh;
 }
 .hero::before{
     content: '';
@@ -131,7 +132,7 @@ header{
     justify-content: space-between;
     position: relative;
     z-index: 3;
-    min-height: 85vh;
+    min-height: 75vh;
 }
 .hero-top .content{
     display: flex;
