@@ -781,6 +781,8 @@ footer a:hover{
     resize: vertical;
     font-family: inherit;
     outline: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 .popup-field textarea:focus{
     border-color: #111;
