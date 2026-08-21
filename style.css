@@ -756,7 +756,7 @@ footer a:hover{
         font-size: 1.1rem;
     }
     .download-btn{
-        display: none;
+        display: inline-block;
     }
     .hero-bottom{
         padding: 2rem 1.5rem;
